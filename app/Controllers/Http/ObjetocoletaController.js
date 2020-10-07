@@ -14,7 +14,9 @@ class ObjetocoletaController {
    * @param {View} ctx.view
    */
   async show ({ params, request, response, view }) {
-    const objeto = await ObjetoColeta.find(params.id)
+    const objeto = await Database
+    .from('objetocoletas')
+    .where({volume: params.id})
 
     return objeto
   }
