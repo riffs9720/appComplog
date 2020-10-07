@@ -17,5 +17,4 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
-Route.resource('/teste', 'getting start')
 Route.resource('objeto', 'ObjetocoletaController')
