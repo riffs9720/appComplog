@@ -6,7 +6,7 @@ const Schema = use('Schema')
 class ObjetocoletaSchema extends Schema {
   up () {
     this.create('objetocoletas', (table) => {
-      table.string('volume')
+      table.string('volume').primary()
       table.string('pedido')
       table.string('endereco')
       table.string('complemento')
@@ -15,7 +15,6 @@ class ObjetocoletaSchema extends Schema {
       table.string('telefone')
       table.string('obs')
       table.string('remessa')
-      table.increments()
       table.timestamps()
     })
   }
