@@ -15,7 +15,7 @@ class ObjetocoletaSchema extends Schema {
       table.string('telefone')
       table.string('obs')
       table.string('remessa')
-      table.increment()
+      table.increments()
       table.timestamps()
     })
   }
