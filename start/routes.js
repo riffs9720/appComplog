@@ -17,4 +17,9 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.post("/Login", "LoginController.autenticacao")
+
+Route.resource('users', 'UserController')
+
 Route.resource('objeto', 'ObjetocoletaController')
