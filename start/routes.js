@@ -23,3 +23,4 @@ Route.post("/Login", "LoginController.autenticacao")
 Route.resource('users', 'UserController')
 
 Route.resource('objeto', 'ObjetocoletaController')
+Route.resource('entrega', 'EntregaController')
