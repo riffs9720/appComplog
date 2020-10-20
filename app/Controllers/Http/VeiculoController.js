@@ -15,11 +15,11 @@ class VeiculoController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index () {
-    const veiculo = await Veiculo.all()
+//   async index () {
+//     const veiculo = await Veiculo.all()
 
-    return veiculo
-  }
+//     return veiculo
+//   }
 
   /**
    * Create/save a new veiculo.
