@@ -24,3 +24,4 @@ Route.resource('users', 'UserController')
 
 Route.resource('objeto', 'ObjetocoletaController')
 Route.resource('entrega', 'EntregaController')
+Route.resource('veiculo', 'VeiculoController')
