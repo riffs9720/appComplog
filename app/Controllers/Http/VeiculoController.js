@@ -47,7 +47,7 @@ class VeiculoController {
    */
   async show ({ params, request, response, view }) {
     const veiculo = await Database
-    .from('veiculo')
+    .from('veiculos')
     .where({placa: params.id})
 
     return veiculo
