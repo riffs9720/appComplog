@@ -49,6 +49,7 @@ class VeiculoController {
     const veiculo = await Database
     .from('veiculos')
     .where({placa: params.id})
+    .first()
 
     return veiculo
   }
