@@ -1,6 +1,7 @@
 'use strict'
 
 const Veiculo = use('App/Models/Veiculo')
+const Database = use('Database')
 
 class VeiculoController {
 
@@ -45,7 +46,9 @@ class VeiculoController {
    * @param {View} ctx.view
    */
   async show ({ params, request, response, view }) {
-    const veiculo = await Veiculo.find(params.id)
+    const veiculo = await Database
+    .from('veiculo')
+    .where({placa: params.id})
 
     return veiculo
   }
